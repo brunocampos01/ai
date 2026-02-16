@@ -1,0 +1,32 @@
+# Temp/intermediate files
+.tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets (NEVER commit)
+.env
+token*.json
+credentials*.json
+secret*.json
+client_secret*.json
+gmail_accounts.json
+
+# OS files
+.DS_Store
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Modal local cache
+.modal/
+
+# Node.js
+node_modules/
+
+# Claude Code local settings (may contain secrets)
+.claude/settings.local.json
+.claude/projects/
+.claude/memory/
