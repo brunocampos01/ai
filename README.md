@@ -1,4 +1,8 @@
 # ai
+
+### my skills
+Claude Code skills and how to install them: [my_skills/README.md](my_skills/README.md).
+
 ### exemples
 ```
 I want you to create a modern, professional NextJS expense tracking application. Here's my vision:
