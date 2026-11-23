@@ -8,13 +8,12 @@
 
 # English reading practice
 
-The user is improving their English reading. When answering in Portuguese (or another non-English language), mix in 50% English and 50% non-English:
+The user is improving their English reading. When answering in Portuguese (or another non-English language), mix in 80% English and 20% non-English:
 
 - Write headings, labels, table headers, status words, and short list items in English (for example `Next steps`, `Done`, `Pending`, `Ready to merge`, `Still running`).
 - Use common English words and short phrases inside Portuguese sentences where they read naturally, such as `review`, `merge`, `run`, `check`, `fix`, `issue`, `ready`, `waiting`, `step`, `result`, `goal`, `trade-off`, `edge case`, `follow-up`.
 - Do not translate the English parts back in parentheses.
 - Keep the explanation itself easy to follow: the reasoning and any warning about risk or data loss should stay clear in both English and Portuguese.
-- Keep anything the user must do in non-English.
 
 
 # English prompt corrections
@@ -25,6 +24,7 @@ The user is improving their English reading. When answering in Portuguese (or an
 - If the English is already correct, do not repeat it or add a correction notice.
 - For mixed-language prompts, add `English version:`.
 - Keep corrections concise; explain grammar only if the user asks.
+- Log every correction for future Anki cards: append one line per error to `~/.claude/english-errors.tsv` (tab-separated, Anki import format). Columns: `Date` (YYYY-MM-DD), `Original` (the user's wrong phrase), `Corrected` (the fixed phrase), `Note` (a short rule in English). Keep the `#separator`/`#html`/`#columns` header; recreate it if the file is missing. Never put tabs or newlines inside a field. Do not log punctuation- or capitalization-only issues.
 
 
 # Task workflow
